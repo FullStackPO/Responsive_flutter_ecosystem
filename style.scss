@@ -10,4 +10,14 @@ html,body{
 main{
    height: 100%;
     width: 100%; 
+    
+    .view1{
+        height: 50vh;
+        overflow: hidden;
+    }
+    .hero:img{
+            height: 200px;
+            width: 200px;
+        }
+
 }

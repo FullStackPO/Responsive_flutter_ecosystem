@@ -12,4 +12,12 @@ html, body {
 main {
   height: 100%;
   width: 100%;
+}
+main .view1 {
+  height: 50vh;
+  overflow: hidden;
+}
+main .hero:img {
+  height: 200px;
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */
