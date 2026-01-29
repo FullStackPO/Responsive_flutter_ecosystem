@@ -14,10 +14,19 @@ main {
   width: 100%;
 }
 main .view1 {
-  height: 50vh;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-main .hero:img {
-  height: 200px;
-  width: 200px;
+main .view1 .hero {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  flex: grow 1;
+}
+main .view1 .hero:img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */

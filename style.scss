@@ -12,12 +12,23 @@ main{
     width: 100%; 
     
     .view1{
-        height: 50vh;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    .hero{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    flex: grow 1;;
     }
+
     .hero:img{
-            height: 200px;
-            width: 200px;
-        }
+        object-fit: cover;
+        height: 100px;
+        width: 100px;
+    }
+    }
+  
 
 }
