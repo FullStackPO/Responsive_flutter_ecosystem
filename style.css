@@ -16,17 +16,34 @@ main {
 main .view1 {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 main .view1 .hero {
   display: flex;
-  flex-direction: row-reverse;
-  height: 100%;
-  flex: grow 1;
+  padding: 1rem;
+  gap: 1rem;
 }
-main .view1 .hero:img {
+main .view1 .hero .div1 {
+  height: 100vh;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+}
+main .view1 .hero .div2 {
+  height: 100vh;
+  flex-grow: 1;
+  overflow: hidden;
+}
+main .view1 .hero .div2 img {
+  width: 100%;
+  height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100px;
-  width: 100px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */

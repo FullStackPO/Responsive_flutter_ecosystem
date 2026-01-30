@@ -8,27 +8,44 @@ html,body{
     width: 100%;
 }
 main{
-   height: 100%;
-    width: 100%; 
-    
+    height: 100%;
+    width: 100%;
+
     .view1{
         display: flex;
         flex-direction: column;
-        height: 100%;
 
+        .hero{
+            display: flex;
+            padding: 1rem;
+            gap: 1rem;
+
+            .div1{
+                height: 100vh;
+                flex-grow: 1;
+                text-align: center;
+                align-items: center;
+            }
+            .div2{
+                height: 100vh;
+                flex-grow: 1;
+                overflow: hidden;
+
+                img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;     // fills the box nicely
+            object-position: center;
+            }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width:900px){
     .hero{
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100%;
-    flex: grow 1;;
+        flex-direction:column-reverse;
     }
-
-    .hero:img{
-        object-fit: cover;
-        height: 100px;
-        width: 100px;
-    }
-    }
-  
-
 }
