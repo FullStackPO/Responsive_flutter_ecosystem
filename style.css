@@ -18,6 +18,7 @@ main .view1 {
   flex-direction: column;
   height: 100vh;
   background: linear-gradient(white, antiquewhite);
+  padding: 1rem;
 }
 main .view1 .hero {
   display: flex;
@@ -132,6 +133,7 @@ main .cards .card3 img {
 @media (max-width: 900px) {
   main .view1 {
     height: 110vh;
+    padding: 1rem;
   }
   main .view1 .hero {
     flex-direction: column-reverse;
