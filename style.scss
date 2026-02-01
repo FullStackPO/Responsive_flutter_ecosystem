@@ -138,6 +138,24 @@ main{
             }
         }
 
+        .view2{
+            display: flex;
+            height: 50vh;
+            margin-top: 2.5rem;
+
+            .communitypara{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                align-items: start;
+                padding:2rem;
+                gap: 1.5rem;
+            }
+            .communityimage{
+                flex:1;
+            }
+        }
+
     }
 
 
