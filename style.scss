@@ -142,17 +142,29 @@ main{
             display: flex;
             height: 50vh;
             margin-top: 2.5rem;
+            justify-content: center;
 
             .communitypara{
                 display: flex;
                 flex-direction: column;
-                flex: 1;
                 align-items: start;
+                justify-content: center;
                 padding:2rem;
                 gap: 1.5rem;
+                flex:1;
             }
             .communityimage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 flex:1;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+
             }
         }
 
@@ -163,7 +175,7 @@ main{
 @media (max-width: 900px){
     main{
         .view1{
-            height:110vh;
+            height:auto;
             padding: 1rem;
 
             .hero{
@@ -182,6 +194,16 @@ main{
         .cards{
             flex-direction: column;
             margin-top: 0.5rem;
+            height: auto;
+        }
+        .view2{
+            flex-direction: column-reverse;
+            margin-top: 2rem;
+            gap:1rem;
+
+            .btn{
+                flex-direction: column;
+            }
         }
     }
 }
